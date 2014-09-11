@@ -21,14 +21,20 @@ function newGame() {
 //Generate a random number between 1 and 100
 function generateRandomNumber() {
 	var randomNumber = Math.floor(Math.random() * 100) + 1;
-	console.log(randomNumber);
+	//console.log(randomNumber);
 	return randomNumber;
 }
 
+//initial value of guessCount;
+var guessCount = 0;
+
 //Evaluate the user's guess and return feedback
+//Later make sure the user is inputting valid input
 function evaluateGuess() {
 	var userInputValue = $('#userGuess').val();
-	console.log(userInputValue);
+	alert(userInputValue);
+	guessCount += 1;
+	$('span#count').text(guessCount);
 }
 
 
