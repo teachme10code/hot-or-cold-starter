@@ -4,8 +4,8 @@
 /*float styles*/
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 1 
+    display: table;  2 
 }
 
 .clearfix:after {
