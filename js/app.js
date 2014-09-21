@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	
 	/*--- Display information modal box ---*/
@@ -36,7 +35,6 @@ function evaluateGuess() {
 	var inputValue = parseInt($('#userGuess').val());
 	if (inputValue > 0 && inputValue <= 100 && inputValue % 1 === 0 && !isNaN(inputValue) && inputValue !== null) {
 		var difference = Math.abs(inputValue - randomNumber);
-		console.log(difference);
 		if (difference === 0) {
 			guessedNumbers.push(' ' + inputValue);
 		    $('ul#guessList').text('Your guesses: ' + guessedNumbers);
